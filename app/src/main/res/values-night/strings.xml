@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="txt_tgl">Today, 5 Maret 2021</string>
+    <string name="txt_tempMax">90°</string>
+    <string name="txt_tempMin">78°</string>
+    <string name="txtDesc">Cloudy</string>
+    <string name="txtDays">Tomorrow</string>
+    <string name="txtItemTempMax">26°</string>
+</resources>

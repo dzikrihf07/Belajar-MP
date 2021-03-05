@@ -9,7 +9,14 @@
     <string name="email">Email</string>
     <string name="password">Password</string>
     <string name="masuk">Masuk</string>
-
     <string name="hello_first_fragment">Hello first fragment</string>
     <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="txt_tgl">Today, 5 Maret 2021</string>
+    <string name="txt_tempMax">37°</string>
+    <string name="txt_tempMin">32°</string>
+    <string name="txtDesc">Cloudy</string>
+    <string name="txtDays">Tomorrow</string>
+    <string name="txtItemDesc">Clouds</string>
+    <string name="txtItemTempMax">26°</string>
+    <string name="txtItemTempMin">20°</string>
 </resources>
