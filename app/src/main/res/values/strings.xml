@@ -19,4 +19,5 @@
     <string name="txtItemDesc">Clouds</string>
     <string name="txtItemTempMax">26°</string>
     <string name="txtItemTempMin">20°</string>
+    <string name="kota">Depok</string>
 </resources>

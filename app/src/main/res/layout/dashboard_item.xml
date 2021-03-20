@@ -20,7 +20,7 @@
         app:srcCompat="@mipmap/ic_launcher_round" />
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/day"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="15dp"
@@ -30,14 +30,14 @@
         android:textColor="@android:color/black"
         android:textSize="22sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/textView2"
+        app:layout_constraintBottom_toTopOf="@+id/desc"
         app:layout_constraintHorizontal_bias="0.085"
         app:layout_constraintLeft_toRightOf="@+id/imageView"
-        app:layout_constraintRight_toLeftOf="@+id/textView3"
+        app:layout_constraintRight_toLeftOf="@+id/temp"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/desc"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginRight="8dp"
@@ -48,10 +48,10 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintHorizontal_bias="0.059"
         app:layout_constraintLeft_toRightOf="@+id/imageView"
-        app:layout_constraintRight_toLeftOf="@+id/textView4" />
+        app:layout_constraintRight_toLeftOf="@+id/temp_range" />
 
     <TextView
-        android:id="@+id/textView3"
+        android:id="@+id/temp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="15dp"
@@ -64,7 +64,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/textView4"
+        android:id="@+id/temp_range"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginRight="27dp"
@@ -73,6 +73,6 @@
         android:textColor="@android:color/black"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView3"
+        app:layout_constraintTop_toBottomOf="@+id/temp"
         app:layout_constraintVertical_bias="0.0" />
 </androidx.constraintlayout.widget.ConstraintLayout>

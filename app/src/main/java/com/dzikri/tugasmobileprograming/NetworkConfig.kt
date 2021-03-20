@@ -1,6 +1,5 @@
 package com.dzikri.tugasmobileprograming
 
-import ResultWeather
 import com.google.gson.GsonBuilder
 import retrofit2.Call
 import retrofit2.Retrofit

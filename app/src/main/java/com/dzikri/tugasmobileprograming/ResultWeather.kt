@@ -1,3 +1,4 @@
+package com.dzikri.tugasmobileprograming
 import com.google.gson.annotations.SerializedName
 
 data class ResultWeather(
