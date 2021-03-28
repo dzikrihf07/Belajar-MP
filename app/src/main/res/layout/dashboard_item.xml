@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="100dp">
 
@@ -9,7 +8,7 @@
         android:id="@+id/imageDescRecycler"
         android:layout_width="67dp"
         android:layout_height="72dp"
-        android:layout_marginLeft="7dp"
+        android:layout_marginStart="16dp"
         android:layout_marginTop="8dp"
         android:layout_marginBottom="8dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -30,7 +29,7 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/desc"
         app:layout_constraintHorizontal_bias="0.085"
-        app:layout_constraintLeft_toRightOf="@+id/imageView"
+        app:layout_constraintLeft_toRightOf="@+id/imageDescRecycler"
         app:layout_constraintRight_toLeftOf="@+id/temp"
         app:layout_constraintStart_toEndOf="@+id/imageDescRecycler"
         app:layout_constraintTop_toTopOf="parent" />
@@ -51,9 +50,8 @@
         android:id="@+id/desc"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginRight="8dp"
+        android:layout_marginEnd="8dp"
         android:layout_marginBottom="15dp"
-        android:capitalize="words"
         android:paddingStart="5dp"
         android:paddingEnd="5dp"
         android:text="@string/txtItemDesc"
@@ -62,7 +60,7 @@
         android:textSize="13sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintHorizontal_bias="0.059"
-        app:layout_constraintLeft_toRightOf="@+id/imageView"
+        app:layout_constraintLeft_toRightOf="@+id/imageDescRecycler"
         app:layout_constraintRight_toLeftOf="@+id/temp_range"
         app:layout_constraintStart_toEndOf="@+id/imageDescRecycler" />
 
@@ -71,7 +69,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="15dp"
-        android:layout_marginRight="20dp"
+        android:layout_marginEnd="31dp"
         android:text="@string/txtItemTempMax"
         android:textColor="@android:color/black"
         android:textSize="22sp"
@@ -83,7 +81,7 @@
         android:id="@+id/temp_range"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginRight="27dp"
+        android:layout_marginEnd="38dp"
         android:layout_marginBottom="36dp"
         android:text="@string/txtItemTempMin"
         android:textColor="@android:color/black"
