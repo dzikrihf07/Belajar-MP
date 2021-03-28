@@ -31,7 +31,7 @@ public class Util {
         if (julianDay == currentJulianDay){
             return df.format(myDate.getTime());
         } else {
-            SimpleDateFormat dayFormat = new SimpleDateFormat("EEEE, d MMMM yyyy", new Locale("id","ID"));
+            SimpleDateFormat dayFormat = new SimpleDateFormat("d MMMM yyyy", new Locale("id","ID"));
             return dayFormat.format(myDate.getTime());
         }
     }
