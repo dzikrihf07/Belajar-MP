@@ -6,14 +6,12 @@
     android:layout_height="100dp">
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/imageDescRecycler"
         android:layout_width="67dp"
         android:layout_height="72dp"
         android:layout_marginLeft="7dp"
         android:layout_marginTop="8dp"
-        android:textSize="11sp"
         android:layout_marginBottom="8dp"
-        android:textColor="@android:color/black"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -23,32 +21,50 @@
         android:id="@+id/day"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="15dp"
-        android:layout_marginRight="8dp"
         android:layout_marginBottom="8dp"
+        android:paddingStart="5dp"
+        android:paddingEnd="5dp"
         android:text="@string/txtDays"
         android:textColor="@android:color/black"
-        android:textSize="22sp"
+        android:textSize="13sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/desc"
         app:layout_constraintHorizontal_bias="0.085"
         app:layout_constraintLeft_toRightOf="@+id/imageView"
         app:layout_constraintRight_toLeftOf="@+id/temp"
+        app:layout_constraintStart_toEndOf="@+id/imageDescRecycler"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/clock"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingStart="5dp"
+        android:paddingEnd="5dp"
+        android:text="@string/txtItemDesc"
+        android:textColor="@android:color/black"
+        android:textSize="13sp"
+        app:layout_constraintBottom_toTopOf="@+id/desc"
+        app:layout_constraintStart_toEndOf="@+id/imageDescRecycler" />
 
     <TextView
         android:id="@+id/desc"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginRight="8dp"
-        android:layout_marginBottom="40dp"
+        android:layout_marginBottom="15dp"
+        android:capitalize="words"
+        android:paddingStart="5dp"
+        android:paddingEnd="5dp"
         android:text="@string/txtItemDesc"
+        android:textAllCaps="false"
         android:textColor="@android:color/black"
-        android:textSize="11sp"
+        android:textSize="13sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintHorizontal_bias="0.059"
         app:layout_constraintLeft_toRightOf="@+id/imageView"
-        app:layout_constraintRight_toLeftOf="@+id/temp_range" />
+        app:layout_constraintRight_toLeftOf="@+id/temp_range"
+        app:layout_constraintStart_toEndOf="@+id/imageDescRecycler" />
 
     <TextView
         android:id="@+id/temp"
@@ -75,4 +91,5 @@
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/temp"
         app:layout_constraintVertical_bias="0.0" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

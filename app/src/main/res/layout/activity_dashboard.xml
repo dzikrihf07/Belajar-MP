@@ -21,11 +21,13 @@
             android:layout_height="wrap_content"
             android:text="@string/kota"
             android:textSize="18sp"
+            android:textStyle="bold"
             android:layout_marginStart="17dp"
             android:textColor="@color/black"
             android:layout_above="@id/tgl"
 
             />
+
         <TextView
             android:id="@+id/tgl"
             android:layout_width="match_parent"
@@ -35,7 +37,6 @@
             android:layout_marginStart="17dp"
             android:textColor="@color/black"
             android:layout_above="@id/tempMax"
-
             />
 
         <TextView
@@ -53,7 +54,7 @@
         <TextView
             android:id="@+id/tempMin"
             android:text="@string/txt_tempMin"
-            android:textSize="25sp"
+            android:textSize="18sp"
             android:textColor="@android:color/black"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -74,9 +75,10 @@
         <TextView
             android:id="@+id/textDesc"
             android:text="@string/txtDesc"
-            android:textSize="22sp"
+            android:textSize="18sp"
             android:textColor="@android:color/black"
             android:textStyle="bold"
+            android:inputType="textCapWords"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textAlignment="center"

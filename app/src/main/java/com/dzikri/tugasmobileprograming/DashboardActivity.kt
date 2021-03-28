@@ -1,14 +1,13 @@
 package com.dzikri.tugasmobileprograming
 
-import android.content.ClipData
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
+import kotlinx.android.synthetic.main.activity_dashboard.*
 import okhttp3.*
 import java.io.IOException
-import kotlinx.android.synthetic.main.activity_dashboard.*
 
 class DashboardActivity : AppCompatActivity() {
 
@@ -25,10 +24,24 @@ class DashboardActivity : AppCompatActivity() {
                 Log.d("response", response.body().toString())
 
                 kota.text = item?.city?.name
-                tgl.text = item?.list?.get(0)?.dt.toString()
-                tempMax.text = item?.list?.get(0)?.main?.temp.toString()
-                tempMin.text = item?.list?.get(0)?.main?.tempMin.toString() + " - " + item?.list?.get(0)?.main?.tempMax.toString()
-                textDesc.text = item?.list?.get(0)?.weather?.get(0)?.description.toString()
+                tgl.text = item?.list?.get(0)?.dt?.let { Util.getDateName(it) }
+                tempMax.text = item?.list?.get(0)?.main?.temp?.let { Util.setFormatTemperature(it) }
+                tempMin.text = item?.list?.get(0)?.main?.tempMin?.let { Util.setFormatTemperature(it) } + " - " + item?.list?.get(0)?.main?.tempMax?.let { Util.setFormatTemperature(it) }
+
+                val str = item?.list?.get(0)?.weather?.get(0)?.description.toString()
+                val strArray = str.split(" ".toRegex()).toTypedArray()
+                val builder = StringBuilder()
+                for (s in strArray) {
+                    val cap = s.substring(0, 1).toUpperCase() + s.substring(1)
+                    builder.append("$cap ")
+                }
+                textDesc.setText(builder.toString())
+
+                item?.list?.get(0)?.weather?.get(0)?.id?.let {
+                    Util.getArtResourceForWeatherCondition(
+                            it
+                    )
+                }?.let { imageDesc.setImageResource(it) }
 
                 var list = item?.list
                 var itemAdp = ItemAdapter(list as List<ListItem>)
