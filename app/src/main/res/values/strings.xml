@@ -20,4 +20,11 @@
     <string name="txtItemTempMax">26°</string>
     <string name="txtItemTempMin">20°</string>
     <string name="kota">Depok</string>
+    <string name="pilih">Pilih</string>
+    <string name="purwakarta">Purwakarta</string>
+    <string name="depok">Depok</string>
+    <string-array name="kotaSpinner">
+        <item>Depok</item>
+        <item>Purwakarta</item>
+    </string-array>
 </resources>
